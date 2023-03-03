@@ -60,7 +60,7 @@ fn receive(
             execute::withdraw(deps, env, api.addr_validate(&cw20_msg.sender)?, cw20_msg.amount)
         },
         ReceiveMsg::Deposit {} => {
-            // receiving ampLUNA
+            // receiving NICOTEEN
             let state = State::default();
 
             let stake_token = state.stake_token.load(deps.storage)?;

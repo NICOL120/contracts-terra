@@ -10,7 +10,7 @@ Also a previous version ([v1.0.0-rc0](https://github.com/st4k3h0us3/steak-contra
 
 | Contract                                  | Description                                              |
 | ----------------------------------------- | -------------------------------------------------------- |
-| [`erist-staking-hub`](./contracts/hub)    | Manages minting/burning of ampLUNA token and bonded Luna |
+| [`erist-staking-hub`](./contracts/hub)    | Manages minting/burning of NICOTEEN token and bonded Luna |
 | [`eris-staking-token`](./contracts/token) | Modified CW20 token contract                             |
 
 ## Deployment
@@ -21,8 +21,8 @@ Also a previous version ([v1.0.0-rc0](https://github.com/st4k3h0us3/steak-contra
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Eris Staking Hub          | [`terra10788fkzah89xrdm27zkj5yvhj9x3494lxawzm5qq3vvxcqz2yzaqyd3enk`](https://finder.terra.money/mainnet/address/terra10788fkzah89xrdm27zkj5yvhj9x3494lxawzm5qq3vvxcqz2yzaqyd3enk) |
 | Eris Liquid Staking Token | [`terra1ecgazyd0waaj3g7l9cmy5gulhxkps2gmxu9ghducvuypjq68mq2s5lvsct`](https://finder.terra.money/mainnet/address/terra1ecgazyd0waaj3g7l9cmy5gulhxkps2gmxu9ghducvuypjq68mq2s5lvsct) |
-| ampLUNA-LUNA Pair         | [`terra1ccxwgew8aup6fysd7eafjzjz6hw89n40h273sgu3pl4lxrajnk5st2hvfh`](https://finder.terra.money/mainnet/address/terra1ccxwgew8aup6fysd7eafjzjz6hw89n40h273sgu3pl4lxrajnk5st2hvfh) |
-| ampLUNA-LUNA LP Token     | [`terra1eh2aulwsyc9m45ggeznav402xcck4ll0yn0xgtlxyf4zkwch7juqsxvfzr`](https://finder.terra.money/mainnet/address/terra1eh2aulwsyc9m45ggeznav402xcck4ll0yn0xgtlxyf4zkwch7juqsxvfzr) |
+| NICOTEEN-LUNA Pair         | [`terra1ccxwgew8aup6fysd7eafjzjz6hw89n40h273sgu3pl4lxrajnk5st2hvfh`](https://finder.terra.money/mainnet/address/terra1ccxwgew8aup6fysd7eafjzjz6hw89n40h273sgu3pl4lxrajnk5st2hvfh) |
+| NICOTEEN-LUNA LP Token     | [`terra1eh2aulwsyc9m45ggeznav402xcck4ll0yn0xgtlxyf4zkwch7juqsxvfzr`](https://finder.terra.money/mainnet/address/terra1eh2aulwsyc9m45ggeznav402xcck4ll0yn0xgtlxyf4zkwch7juqsxvfzr) |
 
 ### Testnet
 
@@ -30,8 +30,8 @@ Also a previous version ([v1.0.0-rc0](https://github.com/st4k3h0us3/steak-contra
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Eris Staking Hub          | [`terra1cgurv08h780ygh3a4l2tjtxndksywskxp4mypkazuuazqas5m8kqleeupz`](https://finder.terra.money/testnet/address/terra1cgurv08h780ygh3a4l2tjtxndksywskxp4mypkazuuazqas5m8kqleeupz) |
 | Eris Liquid Staking Token | [`terra1ucfhdxddqs37lkfpv5lze7lr73lf90jy7zcjppredcxc3v2pgakqppaflr`](https://finder.terra.money/testnet/address/terra1ucfhdxddqs37lkfpv5lze7lr73lf90jy7zcjppredcxc3v2pgakqppaflr) |
-| ampLUNA-LUNA Pair         | [`terra14lr9zdfn0d5gxjwafh3mg5nrrculj4dndunynve452zws2lzyd3smx46ta`](https://finder.terra.money/testnet/address/terra14lr9zdfn0d5gxjwafh3mg5nrrculj4dndunynve452zws2lzyd3smx46ta) |
-| ampLUNA-LUNA LP Token     | [`terra1evucal9yqpa9fcgvfdengy7vldrgsa623900f6s6605dwnf4qpnqke06cc`](https://finder.terra.money/testnet/address/terra1evucal9yqpa9fcgvfdengy7vldrgsa623900f6s6605dwnf4qpnqke06cc) |
+| NICOTEEN-LUNA Pair         | [`terra14lr9zdfn0d5gxjwafh3mg5nrrculj4dndunynve452zws2lzyd3smx46ta`](https://finder.terra.money/testnet/address/terra14lr9zdfn0d5gxjwafh3mg5nrrculj4dndunynve452zws2lzyd3smx46ta) |
+| NICOTEEN-LUNA LP Token     | [`terra1evucal9yqpa9fcgvfdengy7vldrgsa623900f6s6605dwnf4qpnqke06cc`](https://finder.terra.money/testnet/address/terra1evucal9yqpa9fcgvfdengy7vldrgsa623900f6s6605dwnf4qpnqke06cc) |
 
 ## Building
 
@@ -51,7 +51,7 @@ For interacting with the smart contract clone <https://github.com/erisprotocol/l
 
 ### Hub Version 1.1.0
 
-- Support new execute operation "donate" to add LUNA without minting ampLUNA. Will be used to increase the exchange_rate
+- Support new execute operation "donate" to add LUNA without minting NICOTEEN. Will be used to increase the exchange_rate
 - Extended "state" query to include the full tvl in uluna.
 - Added migration version handling
 

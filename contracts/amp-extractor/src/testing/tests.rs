@@ -486,18 +486,18 @@ fn deposit_extract_withdraw() {
         }
     );
 
-    // 0.238095 ampLUNA
+    // 0.238095 NICOTEEN
     let extracted =
         // 5% exchange rate increase (in luna)
         Decimal::from_str("0.05").unwrap()
-        // convert to ampLUNA
+        // convert to NICOTEEN
         * Decimal::from_ratio(Uint128::from(100u128), Uint128::from(105u128))
         // 10% extraction
         * Decimal::from_str("0.1").unwrap()
         // 50 withdraw
         * Uint128::new(50_000000);
 
-    // 49,767857 ampLuna = 49,75 LUNA
+    // 49,767857 NICOTEEN = 49,75 LUNA
     let received = Uint128::new(50_000000).sub(extracted);
 
     match res.messages[1].msg.clone() {
@@ -724,9 +724,9 @@ fn test_query_state() {
     );
 
     // 1000 LUNA -> 1000 LUNA
-    // 100 ampLUNA -> 100 ampLUNA
-    // 0.1 Extract * 0 LUNA (diff) = 0 LUNA = 0 ampLUNA
-    // user has 100 - 0 = 100 ampLUNA = 1000
+    // 100 NICOTEEN -> 100 NICOTEEN
+    // 0.1 Extract * 0 LUNA (diff) = 0 LUNA = 0 NICOTEEN
+    // user has 100 - 0 = 100 NICOTEEN = 1000
     assert_eq!(
         res,
         StateResponse {
@@ -753,9 +753,9 @@ fn test_query_state() {
     );
 
     // 1000 LUNA -> 2000 LUNA
-    // 100 ampLUNA -> 100 ampLUNA
-    // 0.1 Extract * 1000 LUNA (diff) = 100 LUNA = 5 ampLUNA
-    // user has 100 - 5 = 95 ampLUNA = 1900
+    // 100 NICOTEEN -> 100 NICOTEEN
+    // 0.1 Extract * 1000 LUNA (diff) = 100 LUNA = 5 NICOTEEN
+    // user has 100 - 5 = 95 NICOTEEN = 1900
     assert_eq!(
         res,
         StateResponse {
@@ -782,9 +782,9 @@ fn test_query_state() {
     );
 
     // 2000 LUNA -> 2500 LUNA
-    // 100 ampLUNA -> 100 ampLUNA
-    // 0.1 Extract * 1500 LUNA (diff) = 150 LUNA = 6 ampLUNA
-    // user has 100 - 6 = 94 ampLUNA = 2350
+    // 100 NICOTEEN -> 100 NICOTEEN
+    // 0.1 Extract * 1500 LUNA (diff) = 150 LUNA = 6 NICOTEEN
+    // user has 100 - 6 = 94 NICOTEEN = 2350
     assert_eq!(
         res,
         StateResponse {
@@ -840,9 +840,9 @@ fn deposit_test_real() {
     );
 
     // 1000 LUNA -> 1000 LUNA
-    // 100 ampLUNA -> 100 ampLUNA
-    // 0.1 Extract * 0 LUNA (diff) = 0 LUNA = 0 ampLUNA
-    // user has 100 - 0 = 100 ampLUNA = 1000
+    // 100 NICOTEEN -> 100 NICOTEEN
+    // 0.1 Extract * 0 LUNA (diff) = 0 LUNA = 0 NICOTEEN
+    // user has 100 - 0 = 100 NICOTEEN = 1000
     assert_eq!(
         res,
         StateResponse {
@@ -870,9 +870,9 @@ fn deposit_test_real() {
     );
 
     // 1000 LUNA -> 2000 LUNA
-    // 100 ampLUNA -> 100 ampLUNA
-    // 0.1 Extract * 1000 LUNA (diff) = 100 LUNA = 5 ampLUNA
-    // user has 100 - 5 = 95 ampLUNA = 1900
+    // 100 NICOTEEN -> 100 NICOTEEN
+    // 0.1 Extract * 1000 LUNA (diff) = 100 LUNA = 5 NICOTEEN
+    // user has 100 - 5 = 95 NICOTEEN = 1900
     assert_eq!(
         res,
         StateResponse {
@@ -944,9 +944,9 @@ fn deposit_test_real() {
     );
 
     // 1000 LUNA -> 2000 LUNA
-    // 100 ampLUNA -> 100 ampLUNA
-    // 0.1 Extract * 1000 LUNA (diff) = 100 LUNA = 5 ampLUNA
-    // user has 100 - 5 = 95 ampLUNA = 1900
+    // 100 NICOTEEN -> 100 NICOTEEN
+    // 0.1 Extract * 1000 LUNA (diff) = 100 LUNA = 5 NICOTEEN
+    // user has 100 - 5 = 95 NICOTEEN = 1900
     assert_eq!(
         res,
         StateResponse {
@@ -976,10 +976,10 @@ fn deposit_test_real() {
     );
 
     // when the exchange rate changes again, the user will have less, than with single step
-    // it is because the extraction @20 already took some ampLUNA out from the user into the protocol
+    // it is because the extraction @20 already took some NICOTEEN out from the user into the protocol
     // that means the user is "less" invested into luna and will not participate as much in the compounding
 
-    //old   new	extracted	total	available	val before	val	    got	    extr.	LUNA (extr.)	diff	ampLUNA extracted
+    //old   new	extracted	total	available	val before	val	    got	    extr.	LUNA (extr.)	diff	NICOTEEN extracted
     //10	20	0	        100	    100	        1000	    2000	1000	10%	    100	            0,5	    5
     //20	25	5	        100	    95	        1900	    2375	475	    10%	    47,5	        0,2	    1,9
     //10	25	0	        100	    100	        1000	    2500	1500	10%	    150	            0,6	    6

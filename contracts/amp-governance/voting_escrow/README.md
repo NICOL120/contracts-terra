@@ -1,4 +1,4 @@
-# vAMP = Vote Escrowed (LUNA-ampLUNA) ampLP
+# vAMP = Vote Escrowed (LUNA-NICOTEEN) ampLP
 
 The vAMP contract allows ampLP token holders to stake their tokens in order to boost their governance and delegation power. Voting power is boosted according to how long someone locks their ampLP for.
 

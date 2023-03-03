@@ -74,7 +74,7 @@ pub enum ExecuteMsg {
 
 #[cw_serde]
 pub enum ReceiveMsg {
-    /// Deposit cw20 ampLuna into the vault
+    /// Deposit cw20 NICOTEEN into the vault
     Deposit {},
 
     Withdraw {},
